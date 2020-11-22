@@ -1,0 +1,73 @@
+body,
+html{
+  background: black;  
+}
+p{
+    text-align: center;
+    font-size: 24px;
+}
+.creditos{
+    text-align: left;
+    font-size: 15px;
+}
+.musica{
+    text-align: left;
+    font-size: 15px;
+}
+ol{
+    margin: 200px 20px 0px 20px;
+
+}
+
+.lista{
+   margin-left: 100px;
+    position: absolute;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+.pre-loader{
+    position: absolute;
+    left:50%;
+}
+.pre-loader span{
+    height: 2em;
+    width: 2em;
+    background: white;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius:50% ;
+    animation: wave 2s ease-in-out infinite;
+}
+.pre-loader span:nth-child(1){
+    left: -4.5em;
+    animation-delay: 0s;
+}
+.pre-loader span:nth-child(2){
+    left: -1.5em;
+    animation-delay: 0.1s;
+}
+.pre-loader span:nth-child(3){
+    left: 1.5em;
+    animation-delay: 0.2s;
+}
+.pre-loader span:nth-child(4){
+    left: 4.5em;
+    animation-delay: 0.3s;
+}
+
+@keyframes wave{
+    0%,
+    75%,
+    100%{
+        transform: translateY(0) scale(1);
+    }
+    25%{
+        transform: translateY(2.5em);
+    }
+    50%{
+        transform: translateY(-2.5) scale(1.1);
+    }
+}
